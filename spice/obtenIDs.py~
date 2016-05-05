@@ -1,0 +1,40 @@
+#!/usr/bin/python
+import pdb
+import numpy as np
+import os
+import sys
+import matplotlib.pyplot as plt
+
+def main():
+	direc="./"
+	modo="bin" #"txt"
+	fecha_ini="2016-Apr-20"
+	fecha_fin="2017-Apr-20"
+	print "Leyendo el csv"
+	f=open("NEO_results.csv","r")
+	data=list()
+	a=f.readlines()
+	for k in a:
+		k=k.replace("\n","")
+		data.append(k.split(","))
+	data=np.array(data)
+	#print "Leido"
+	spkids=data[:,0][1:len(data[:,0])].astype(int)
+	#pdb.set_trace()
+	if modo=="bin":
+		mod="-b "
+	else:
+		mod="-t "
+	tot=len(spkids)
+	
+	#print "Accediendo a JPL Horizons"
+	for k in range(len(spkids)):
+		#raw_input("./smb_spk "+mod+" "+"\"DES= "+str(spkids[k])+";\""+" "+fecha_ini+" "+fecha_fin+" f.gallardo.lopez@gmail.com " + str(spkids[k])+".bsp")
+		#pdb.set_trace()
+		sys.stdout.write("\r%f%%" %((k/tot)*100))
+
+		os.system("./smb_spk "+mod+" "+"\"DES= "+str(spkids[k])+";\""+" "+fecha_ini+" "+fecha_fin+" f.gallardo.lopez@gmail.com " +direc+ str(spkids[k])+".bsp")
+
+if __name__=="__main__":
+
+	main()

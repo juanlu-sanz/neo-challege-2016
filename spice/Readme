@@ -1,0 +1,6 @@
+ObtenIDs.py will download all the SPK Kernels from the NEOs SPKIDs in NEO_results.csv (from small bodies DB) in ./Kernels/neos 
+(YOU SHOULD CREATE THE FOLDER!, we deleted it and the current content as it did not make sense to upload the current 14K Binary SPKs).
+
+Rest api will provide with a REST API that will interact with BOKEH and SPICE.
+
+
