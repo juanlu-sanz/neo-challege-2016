@@ -9,5 +9,6 @@ It will read NEO_results.csv (extracted from small bodies DB) first column and t
 
 ## What is the content of this folder
 
-This folder contains Leap seconds kernels (tls), Earth binary kernels and so on (Some Cassini spacecraft kernels are there, but are not necessary for NEOFIT). An automatic script should be run to update this data in order to provide users with accurate results. 
+This folder contains Leap seconds kernels (tls), Earth binary kernels and so on (Some Cassini spacecraft kernels are here, but are not necessary for NEOFIT). An automatic script should be run to update this data in order to provide users with accurate results. 
 
+The "neos" folder should be created the first time NEOFIT is launched.
