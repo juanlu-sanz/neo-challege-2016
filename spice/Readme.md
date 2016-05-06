@@ -3,6 +3,11 @@
 ObtenIDs.py will download all the SPK Kernels from the NEOs SPKIDs in NEO_results.csv (from small bodies DB) in ./kernels/neos 
 (YOU SHOULD CREATE THE FOLDER!, we deleted it and the current content as it did not make sense to upload the current 14K Binary SPKs).
 
+The ObtenIDs.py program uses indeed a modified Bash JPL spcript to download from Horizons the SPKs. We needed to modify it as 
+when the original tries to download a big SPK it does not go into passive mode (there was a small bug there that could be related
+with the software version). 
+
+
 ## How to populate the database after running ObtenIDs.py
 
 populatedatabase.py will populate the mongodb database (you should create the database yourself and change the 'user','url' and 'password' properly)
