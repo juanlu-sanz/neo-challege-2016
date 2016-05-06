@@ -1,8 +1,0 @@
-A folder called "neos" should be created here:This folder will be populated everytime "obtenIDs.py" is run (crontab in order to populate it 
-on a frequent basis).
-It will read NEO_results.csv (extracted from small bodies DB) first column and then download the SPKs from Horizons for the 
-60 days time span (BTW: we extracted a couple of days becuase we found a bug in the Spice version we used).
-
-The ObtenIDs.py program uses indeed a modified JPL spcript to download from Horizons de SPKs. We needed to modfied it as 
-when the original tries to download a big SPK does not go into pasive mode (there was a small bug there that could be related
-with the script version). 
