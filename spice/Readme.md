@@ -7,7 +7,7 @@ ObtenIDs.py will download all the SPK Kernels from the NEOs SPKIDs in NEO_result
 
 populatedatabase.py will populate the mongodb database (you should create the database yourself and change the 'user','url' and 'password' properly)
 
-## How allow NEOFIT to update its dabases on a frequent basis:
+## How to allow NEOFIT to update its dabases on a frequent basis:
 
 Both python programs (ObtenIDs.py and populatedatabase.py) should be included in the Crontab of your system.
 
