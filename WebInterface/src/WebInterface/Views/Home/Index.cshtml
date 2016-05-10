@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Neofit";
+}
+
+<div id="mapid"></div>
+
+<div id="lat-long-holder">
+    <input id="latitude" type="text" name="val-lat" value="User Latitude" />
+    <input id="longitude" type="text" name="val-lng" value="User Longitude" />
+    <input type="text" class="datepicker" id="datepicker" />
+    <br />
+    <span id="coordinates-button" class="button">Punch it!</span>
+</div>
+<hr />
+<div id="content">
+    <div id="table">
+
+      
+    </div>
+    <div id="graph"></div>
+</div>
+
+@section JS{
+    <script>
+        var app = App;
+        app.init();
+    </script>
+}
+

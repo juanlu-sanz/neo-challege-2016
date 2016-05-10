@@ -1,0 +1,26 @@
+#!/usr/local/bin/expect
+# 
+# Establish 'timeout' version of resize command. For use within Horizons. 
+#
+#  * If successful execution, output to redirected file will be control
+#     characters. Redo without redirection, knowing there is a controlling
+#     terminal that allows resize.
+#
+#  * If timed-out (no controlling terminal ala script access), output to 
+#     redirected file will contain ASCII text: "timed out". So Horizons
+#     will know there is no controlling terminal and set defaults.
+#
+# Modification History:
+#
+#  DATE         Who  Change
+#  -----------  ---  ---------------------------------------------------------
+#  2011-Aug-08  JDG  Version 1
+#
+#spawn -noecho sleep 3
+ spawn -noecho resize
+ interact {
+   timeout 2 { 
+    send_user "timed out\n"
+    exit
+   }
+ }

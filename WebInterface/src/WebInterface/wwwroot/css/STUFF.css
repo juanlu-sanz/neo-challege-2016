@@ -1,0 +1,128 @@
+#main.analysis {
+    position: relative;
+    min-width: 90% !important;
+    padding: 2.5em 0 2.5em;
+    text-align: left;
+}
+
+.analysis #avatar {
+    height: 90px;
+    margin: 0 !important;
+}
+
+.analysis #avatar-holder {
+    display: inline-block !important;
+    width: 100px;
+    height: 100px;
+    margin: 1em 1em 1em 3em !important;
+    vertical-align: top;
+}
+
+    .analysis #avatar-holder:before {
+        width: 0;
+        display: none;
+        content: none;
+    }
+
+.analysis #text-header {
+    display: inline-block !important;
+    height: 100px;
+    margin: 1em 0 1em 0 !important;
+    width: 20%;
+    text-align: center;
+    vertical-align: top;
+}
+
+.analysis #mapid {
+    display: inline-block !important;
+    width: 40%;
+    height: 180px;
+}
+
+.analysis #lat-long-holder {
+    vertical-align: top;
+    display: inline-block !important;
+    width: 25%;
+}
+
+    .analysis #lat-long-holder > input {
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+.analysis .content {
+    border-top: 1px solid #c8cccf;
+}
+
+
+
+
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    color: #4a4a4d;
+    font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0 auto;
+    margin-top: 2em;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+th,
+td {
+    padding: 10px 15px;
+    vertical-align: middle;
+}
+
+thead {
+    background: #395870;
+    color: #fff;
+}
+
+th {
+    font-weight: bold;
+}
+
+    th:first-child {
+        text-align: left;
+    }
+
+tbody tr:nth-child(even) {
+    background: #f0f0f2;
+}
+
+td {
+    border-bottom: 1px solid #cecfd5;
+    border-right: 1px solid #cecfd5;
+}
+
+    td:first-child {
+        border-left: 1px solid #cecfd5;
+    }
+
+.book-title {
+    color: #395870;
+    display: block;
+}
+
+.item-stock,
+.item-qty {
+    text-align: center;
+}
+
+.item-price {
+    text-align: right;
+}
+
+.item-multiple {
+    display: block;
+}
+
+tfoot {
+    text-align: right;
+}
+
+    tfoot tr:last-child {
+        background: #f0f0f2;
+    }

@@ -1,0 +1,29 @@
+KPL\MK
+
+\begintext
+
+Metkernel para el ejemplo
+
+\begindata
+
+PATH_VALUES=('./kernels/')
+PATH_SYMBOLS=('KERNELS')
+KERNELS_TO_LOAD=('$KERNELS/030201AP_SK_SM546_T45.bsp','$KERNELS/naif0011.tls',
+'$KERNELS/de421.bsp','$KERNELS/pck00008.tpc','$KERNELS/2000433.bsp')
+
+
+\begintext
+
+
+#spi.furnsh("./pruebas/naif0011.tls")
+#spi.furnsh("./pruebas/030201AP_SK_SM546_T45.bsp")
+#spi.furnsh("./pruebas/pck00008.tpc") #Info fisica sobre los planetas, me da el IAU_EARTH
+#spi.furnsh("./pruebas/de421.bsp")#Pointing of Earth 
+EL PE 10350... es un kernel SPK de Cassini de 15/Dic/2015 a las 9:21:00 am al 25 Dic 2010 a las 2am
+
+
+'$KERNELS/2000433.bsp',
+'$KERNELS/de421.bsp',
+'$KERNELS/2000399.bsp',
+'$KERNELS/naif0011.tls')
+
